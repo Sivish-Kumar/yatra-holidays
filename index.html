@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yatra Holidays | Tropical Getaways, Global Escapes & Sacred Pilgrimages</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Outfit, Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            ocean: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            },
+            sea: {
+              800: '#0c4a6e',
+              900: '#082f49',
+              950: '#031a29',
+            },
+            coral: {
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
+            },
+            sand: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              200: '#fde68a',
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #e0f2fe;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2dd4bf;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0d9488;
+    }
+    .wave-bg {
+      background: radial-gradient(circle at 50% 120%, rgba(20, 184, 166, 0.22) 0%, rgba(2, 132, 199, 0) 70%);
+    }
+    .hover-lift {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 30px -10px rgba(13, 148, 136, 0.22);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-ocean-50/40 via-sky-50/20 to-slate-50 text-slate-800 font-sans antialiased selection:bg-ocean-500 selection:text-white">
+
+  <div class="bg-sea-950 text-cyan-200 text-xs py-2 px-4 border-b border-cyan-900/60 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+      <div class="flex items-center flex-wrap gap-4 sm:gap-6">
+        <span class="flex items-center gap-1.5 text-white font-medium">
+          <i data-lucide="waves" class="w-3.5 h-3.5 text-ocean-400"></i> Toll-Free: <strong>1800-270-YATRA (9287)</strong>
+        </span>
+        <span class="hidden sm:flex items-center gap-1.5 text-cyan-300">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-ocean-400"></i> holidays@yatraholidays.in
+        </span>
+        <span class="hidden xl:inline text-ocean-300 bg-ocean-950/80 px-2.5 py-0.5 rounded-full text-[11px] border border-ocean-700/60 font-medium">
+          ✦ Govt. Certified & IATA Accredited
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-sand-300 text-[11px] font-semibold flex items-center gap-1.5">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-sand-300"></i> Authentic Pure Veg & Satvik Meals Available Worldwide
+        </span>
+        <div class="h-3 w-px bg-cyan-800 hidden sm:block"></div>
+        <a href="#custom-planner" class="text-xs hover:text-white flex items-center gap-1 text-cyan-300 font-semibold transition">
+          <i data-lucide="calculator" class="w-3.5 h-3.5 text-sand-300"></i> Custom Cost Estimator
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-8 z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-cyan-100 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-ocean-600 via-cyan-500 to-teal-400 flex items-center justify-center text-white shadow-md shadow-ocean-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="compass" class="w-6 h-6 stroke-[2.2]"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-slate-900 block leading-tight">Yatra<span class="text-transparent bg-clip-text bg-gradient-to-r from-ocean-600 to-cyan-600">Holidays</span></span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-ocean-700 block -mt-0.5">Tropical Escapes, Global Tours & Yatras</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-700">
+        <a href="#hero" class="hover:text-ocean-600 transition-colors">Home</a>
+        <a href="#packages" onclick="filterCategory('beach')" class="hover:text-ocean-600 transition-colors flex items-center gap-1">
+          <i data-lucide="palmtree" class="w-4 h-4 text-ocean-500"></i> Beach & Islands
+        </a>
+        <a href="#packages" onclick="filterCategory('international')" class="hover:text-ocean-600 transition-colors flex items-center gap-1">
+          <i data-lucide="globe" class="w-4 h-4 text-cyan-600"></i> Foreign Tours
+        </a>
+        <a href="#packages" onclick="filterCategory('pilgrimage')" class="hover:text-ocean-600 transition-colors flex items-center gap-1">
+          <i data-lucide="sun" class="w-4 h-4 text-sand-500"></i> Sacred Yatras
+        </a>
+        <a href="#custom-planner" class="hover:text-ocean-600 transition-colors">Trip Estimator</a>
+        <a href="#why-us" class="hover:text-ocean-600 transition-colors">Why Yatra Holidays</a>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="hidden sm:flex items-center space-x-3">
+        <a href="https://wa.me/919876543210?text=Hello%20Yatra%20Holidays!%20I%20would%20like%20to%20inquire%20about%20your%20holiday%20and%20yatra%20packages." target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow-sm transition hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp Desk</span>
+        </a>
+        <button onclick="openEnquiryModal('General Inquiry', 'Connect with our trip planners for custom quotes and dates')" class="inline-flex items-center gap-2 bg-gradient-to-r from-ocean-600 to-cyan-600 hover:from-ocean-700 hover:to-cyan-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-md shadow-ocean-600/25 transition hover:-translate-y-0.5">
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+          <span>Plan My Trip</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-xl text-slate-600 hover:bg-ocean-50 focus:outline-none" aria-label="Toggle navigation">
+        <i data-lucide="menu" class="w-6 h-6 text-ocean-800"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Dropdown -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-cyan-100 px-4 pt-3 pb-6 space-y-3">
+      <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">Home</a>
+      <a href="#packages" onclick="filterCategory('beach'); toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">Beach & Island Holidays (Maldives, Bali, Kerala)</a>
+      <a href="#packages" onclick="filterCategory('international'); toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">Foreign Tours (Dubai, Europe, Vietnam)</a>
+      <a href="#packages" onclick="filterCategory('pilgrimage'); toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">Sacred Yatras (Char Dham, Ramayana Trail, Kailash)</a>
+      <a href="#custom-planner" onclick="toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">Trip Cost Estimator</a>
+      <a href="#why-us" onclick="toggleMobileMenu()" class="block py-2 text-slate-800 font-medium hover:text-ocean-600">About Yatra Holidays</a>
+      <div class="pt-3 border-t border-cyan-100 flex flex-col gap-2">
+        <a href="https://wa.me/919876543210" target="_blank" class="w-full text-center py-2.5 bg-emerald-600 text-white font-medium rounded-xl text-sm flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Desk
+        </a>
+        <button onclick="openEnquiryModal('Quick Contact', 'Requested from mobile menu'); toggleMobileMenu()" class="w-full py-2.5 bg-ocean-600 text-white font-medium rounded-xl text-sm flex items-center justify-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Plan My Trip
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="relative overflow-hidden bg-sea-950 text-white pt-16 pb-28 md:pt-24 md:pb-36">
+    <!-- Serene Oceanic & Travel Background Image -->
+    <div class="absolute inset-0 z-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-sea-950 via-sea-950/80 to-sea-950/40 z-0"></div>
+    <div class="absolute inset-0 wave-bg pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-ocean-500/20 border border-ocean-400/40 text-ocean-300 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 backdrop-blur-md">
+            <i data-lucide="compass" class="w-4 h-4 text-ocean-400"></i> Seamless Journeys Across Seas, Mountains & Shrines
+          </div>
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white mb-6">
+            From Turquoise Lagoons to Sacred Shrines, <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-ocean-300 to-sand-200">Your Journey Begins Here.</span>
+          </h1>
+          <p class="text-cyan-100/90 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl font-light">
+            Discover hand-crafted travel experiences tailored to you: tranquil overwater villas in the Maldives, exotic world marvels, sun-soaked beaches, and soul-stirring Himalayan pilgrimages—all with authentic Indian dining and 24/7 care.
+          </p>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <a href="#packages" class="bg-gradient-to-r from-ocean-500 to-cyan-500 hover:from-ocean-400 hover:to-cyan-400 text-sea-950 font-bold px-7 py-3.5 rounded-xl shadow-lg shadow-ocean-500/30 flex items-center gap-2 transition hover:-translate-y-0.5">
+              <i data-lucide="compass" class="w-4 h-4 text-sea-950"></i>
+              <span>Explore All Packages</span>
+            </a>
+            <a href="#custom-planner" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-cyan-300/30 font-medium px-6 py-3.5 rounded-xl flex items-center gap-2 transition">
+              <i data-lucide="calculator" class="w-4 h-4 text-ocean-300"></i>
+              <span>Estimate Trip Cost</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Feature Badges Grid -->
+        <div class="lg:col-span-5 hidden lg:block">
+          <div class="grid grid-cols-2 gap-4">
+            
+            <div class="bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-cyan-300/20 hover:border-cyan-300/50 transition">
+              <div class="w-10 h-10 rounded-2xl bg-ocean-500/30 text-ocean-300 flex items-center justify-center mb-3">
+                <i data-lucide="palmtree" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-white text-base">Beach & Islands</h4>
+              <p class="text-xs text-cyan-100/70 mt-1">Maldives overwater villas, Bali beaches & Kerala backwaters.</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-cyan-300/20 hover:border-cyan-300/50 transition">
+              <div class="w-10 h-10 rounded-2xl bg-cyan-500/30 text-cyan-300 flex items-center justify-center mb-3">
+                <i data-lucide="globe" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-white text-base">Foreign Escapes</h4>
+              <p class="text-xs text-cyan-100/70 mt-1">Dubai safaris, Swiss Alps, Paris, and Southeast Asia wonders.</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-cyan-300/20 hover:border-cyan-300/50 transition">
+              <div class="w-10 h-10 rounded-2xl bg-sand-500/30 text-sand-300 flex items-center justify-center mb-3">
+                <i data-lucide="sun" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-white text-base">Sacred Yatras</h4>
+              <p class="text-xs text-cyan-100/70 mt-1">Char Dham Kedarnath, Kailash Mansarovar & Ramayana Trail.</p>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md p-5 rounded-3xl border border-cyan-300/20 hover:border-cyan-300/50 transition">
+              <div class="w-10 h-10 rounded-2xl bg-coral-500/30 text-coral-300 flex items-center justify-center mb-3">
+                <i data-lucide="utensils" class="w-5 h-5"></i>
+              </div>
+              <h4 class="font-serif font-bold text-white text-base">Satvik & Indian Food</h4>
+              <p class="text-xs text-cyan-100/70 mt-1">Guaranteed pure vegetarian & Jain culinary care worldwide.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Features Bar -->
+      <div class="mt-12 pt-8 border-t border-cyan-900/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-cyan-100 text-xs">
+        <div class="flex items-center gap-3">
+          <i data-lucide="shield-check" class="w-6 h-6 text-ocean-400 shrink-0"></i>
+          <div><p class="font-bold text-white text-sm">Govt. Accredited</p><p class="text-cyan-200/70">Verified travel operator</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="utensils-crossed" class="w-6 h-6 text-ocean-400 shrink-0"></i>
+          <div><p class="font-bold text-white text-sm">Pure Indian Food</p><p class="text-cyan-200/70">Catered for families & elders</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="plane" class="w-6 h-6 text-ocean-400 shrink-0"></i>
+          <div><p class="font-bold text-white text-sm">Full Transfer Concierge</p><p class="text-cyan-200/70">Seaplanes, trains & private cars</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+          <i data-lucide="headphones" class="w-6 h-6 text-ocean-400 shrink-0"></i>
+          <div><p class="font-bold text-white text-sm">24/7 Ground Assistance</p><p class="text-cyan-200/70">Dedicated tour captains</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search & Filter Card -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 relative z-20">
+      <div class="bg-white rounded-3xl shadow-2xl p-5 md:p-6 border border-cyan-100 text-slate-800">
+        <div class="flex items-center gap-2 mb-4 text-xs font-bold text-ocean-700 uppercase tracking-wider">
+          <i data-lucide="search" class="w-4 h-4 text-ocean-600"></i> Find Your Ideal Vacation or Pilgrimage
+        </div>
+
+        <form id="searchForm" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 items-end" onsubmit="handleSearch(event)">
+          <!-- Destination Dropdown -->
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Destination</label>
+            <div class="relative">
+              <i data-lucide="map-pin" class="w-4 h-4 absolute left-3 top-3 text-ocean-600"></i>
+              <select id="filterDestination" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none bg-ocean-50/30">
+                <option value="all">All Destinations</option>
+                <option value="maldives">Maldives (Overwater & Beach)</option>
+                <option value="bali">Bali (Indonesia)</option>
+                <option value="dubai">Dubai & Abu Dhabi (UAE)</option>
+                <option value="europe">Swiss Alps & Paris (Europe)</option>
+                <option value="chardham">Char Dham Yatra (Uttarakhand)</option>
+                <option value="kashmir">Kashmir Valley</option>
+                <option value="kailash">Kailash Mansarovar (Tibet)</option>
+                <option value="srilanka">Sri Lanka Ramayana Trail</option>
+                <option value="kerala">Kerala Backwaters & Beach</option>
+                <option value="vietnam-cambodia">Vietnam & Cambodia</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category Dropdown -->
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Travel Style</label>
+            <div class="relative">
+              <i data-lucide="compass" class="w-4 h-4 absolute left-3 top-3 text-ocean-600"></i>
+              <select id="filterCategory" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none bg-ocean-50/30">
+                <option value="all">All Styles</option>
+                <option value="beach">Beach & Tropical Islands</option>
+                <option value="international">Foreign Escapes</option>
+                <option value="pilgrimage">Sacred Pilgrimages</option>
+                <option value="domestic">Incredible India</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Duration Dropdown -->
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Duration</label>
+            <div class="relative">
+              <i data-lucide="clock" class="w-4 h-4 absolute left-3 top-3 text-ocean-600"></i>
+              <select id="filterDuration" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none bg-ocean-50/30">
+                <option value="all">Any Duration</option>
+                <option value="short">4 - 5 Days</option>
+                <option value="medium">6 - 8 Days</option>
+                <option value="long">9 - 14 Days</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Budget Range -->
+          <div>
+            <label class="block text-xs font-bold text-slate-600 mb-1">Max Budget / Person</label>
+            <div class="relative">
+              <i data-lucide="indian-rupee" class="w-4 h-4 absolute left-3 top-3 text-ocean-600"></i>
+              <select id="filterBudget" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none bg-ocean-50/30">
+                <option value="all">All Budgets</option>
+                <option value="35000">Under ₹35,000</option>
+                <option value="60000">Under ₹60,000</option>
+                <option value="90000">Under ₹90,000</option>
+                <option value="250000">Premium & Long Haul</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <button type="submit" class="w-full bg-gradient-to-r from-ocean-600 to-cyan-600 hover:from-ocean-700 hover:to-cyan-700 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md shadow-ocean-600/30 transition">
+              <i data-lucide="search" class="w-4 h-4"></i>
+              <span>Search Tours</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs uppercase font-extrabold tracking-wider text-ocean-700 bg-ocean-100/80 px-4 py-1.5 rounded-full border border-ocean-200">
+        Handcrafted Journeys
+      </span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3 mb-4">
+        Featured Holiday & Pilgrimage Packages
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        Browse our comprehensive portfolio of island retreats, world discoveries, and sacred yatras across India and foreign lands.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="flex justify-center mt-6">
+        <div class="inline-flex p-1.5 bg-cyan-100/70 rounded-2xl border border-cyan-200 shadow-inner flex-wrap justify-center gap-1.5">
+          <button onclick="filterCategory('all')" id="pill-all" class="px-5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-gradient-to-r from-ocean-600 to-cyan-600 text-white shadow-md transition">
+            All Packages (<span id="count-all">10</span>)
+          </button>
+          <button onclick="filterCategory('beach')" id="pill-beach" class="px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl text-slate-700 hover:text-ocean-700 transition flex items-center gap-1.5">
+            <i data-lucide="palmtree" class="w-3.5 h-3.5 text-ocean-600"></i>
+            <span>Beach & Islands (<span id="count-beach">3</span>)</span>
+          </button>
+          <button onclick="filterCategory('international')" id="pill-international" class="px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl text-slate-700 hover:text-ocean-700 transition flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-cyan-600"></i>
+            <span>Foreign Tours (<span id="count-intl">6</span>)</span>
+          </button>
+          <button onclick="filterCategory('pilgrimage')" id="pill-pilgrimage" class="px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl text-slate-700 hover:text-ocean-700 transition flex items-center gap-1.5">
+            <i data-lucide="sun" class="w-3.5 h-3.5 text-sand-500"></i>
+            <span>Sacred Yatras (<span id="count-pilgrim">4</span>)</span>
+          </button>
+          <button onclick="filterCategory('domestic')" id="pill-domestic" class="px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl text-slate-700 hover:text-ocean-700 transition flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-coral-500"></i>
+            <span>Domestic India (<span id="count-dom">3</span>)</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tour Packages Grid Container -->
+    <div id="packagesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+      <!-- Injected dynamically via JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="noResults" class="hidden text-center py-16 bg-white rounded-3xl border border-cyan-100">
+      <i data-lucide="search-x" class="w-12 h-12 text-ocean-400 mx-auto mb-3"></i>
+      <h3 class="text-lg font-bold text-slate-800">No packages match your search</h3>
+      <p class="text-sm text-slate-500 mt-1 mb-4">Try adjusting your filters or use our custom trip estimator below.</p>
+      <button onclick="resetFilters()" class="px-5 py-2.5 bg-ocean-600 text-white rounded-xl text-xs font-bold shadow-md hover:bg-ocean-700">
+        Reset All Filters
+      </button>
+    </div>
+  </section>
+
+  <section id="custom-planner" class="py-20 bg-sea-950 text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-cover bg-center pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80');"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Explanatory Column -->
+        <div class="lg:col-span-5">
+          <span class="text-xs uppercase font-extrabold tracking-wider text-ocean-300 bg-ocean-500/20 px-3.5 py-1.5 rounded-full border border-ocean-400/30">
+            Instant Fair Quotations
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-4 mb-4">
+            Custom Trip Cost Estimator
+          </h2>
+          <p class="text-cyan-100/80 text-sm leading-relaxed mb-6 font-light">
+            Plan your exact holiday or pilgrimage with complete transparency. Choose your dream destination, tier of stay, travel party, and meal options for a real-time price estimation.
+          </p>
+
+          <div class="space-y-4 text-xs text-cyan-100">
+            <div class="flex items-start gap-3 p-3.5 bg-sea-900/80 rounded-2xl border border-cyan-800/80">
+              <i data-lucide="shield-check" class="w-5 h-5 text-ocean-400 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-sm">No Hidden Taxes</strong>
+                <span>All quotes incorporate local taxes, hotel service charges, and permits where applicable.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3.5 bg-sea-900/80 rounded-2xl border border-cyan-800/80">
+              <i data-lucide="utensils" class="w-5 h-5 text-teal-400 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-sm">Pure Indian & Satvik Cuisine</strong>
+                <span>Optionally bundle pure Indian vegetarian, Jain, or satvik kitchen meals across all circuits.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3.5 bg-sea-900/80 rounded-2xl border border-cyan-800/80">
+              <i data-lucide="plane" class="w-5 h-5 text-sand-300 shrink-0 mt-0.5"></i>
+              <div>
+                <strong class="text-white block text-sm">Transfer & Flight Bundles</strong>
+                <span>Select land-only packages or bundle domestic and international flight connections.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive Calculator Card -->
+        <div class="lg:col-span-7 bg-white text-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl border border-cyan-100">
+          <div class="flex items-center justify-between mb-6">
+            <h3 class="font-serif text-2xl font-bold text-slate-900 flex items-center gap-2">
+              <i data-lucide="calculator" class="w-5 h-5 text-ocean-600"></i> Trip Estimator
+            </h3>
+            <span class="text-xs font-bold bg-ocean-100 text-ocean-800 px-3 py-1 rounded-full">Live INR Quote</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+            <!-- Destination Circuit -->
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-bold text-slate-600 mb-1.5">Select Destination Circuit</label>
+              <select id="calcRegion" onchange="calculateCustomCost()" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 bg-ocean-50/30 font-semibold text-slate-800">
+                <option value="maldives" selected>The Maldives: Overwater Villa & Lagoon Retreat (5 Days / 4 Nights)</option>
+                <option value="bali">Bali: Sacred Water Temples & Beaches (6 Days / 5 Nights)</option>
+                <option value="dubai">Dubai & Abu Dhabi: City Marvels & BAPS Mandir (5 Days / 4 Nights)</option>
+                <option value="europe">Grand Europe: Swiss Alps & Paris Highlights (8 Days / 7 Nights)</option>
+                <option value="srilanka">Sri Lanka: Ramayana Trail & Southern Coast (6 Days / 5 Nights)</option>
+                <option value="vietnam">Vietnam & Cambodia: Angkor Wat & Halong Bay (7 Days / 6 Nights)</option>
+                <option value="chardham">Char Dham Yatra: Kedarnath & Badrinath (10 Days / 9 Nights)</option>
+                <option value="kashmir">Kashmir: Dal Lake Houseboat & Gulmarg Snow (6 Days / 5 Nights)</option>
+                <option value="kerala">Kerala: Backwater Houseboat & Kovalam Beach (6 Days / 5 Nights)</option>
+                <option value="kailash">Mount Kailash & Lake Mansarovar Kora (13 Days / 12 Nights)</option>
+              </select>
+            </div>
+
+            <!-- Accommodation Tier -->
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1.5">Accommodation Standard</label>
+              <select id="calcHotel" onchange="calculateCustomCost()" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 bg-ocean-50/30">
+                <option value="comfort">Standard Deluxe / 4-Star Stay</option>
+                <option value="deluxe" selected>Premium 5-Star Resort / Villa</option>
+                <option value="luxury">Ultra Luxury / Private Pool Villa</option>
+              </select>
+            </div>
+
+            <!-- Flight Mode -->
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1.5">Flight Option</label>
+              <select id="calcFlight" onchange="calculateCustomCost()" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 bg-ocean-50/30">
+                <option value="land">Land Package Only (Self Flights)</option>
+                <option value="flights_included" selected>Include Return Flights from India</option>
+              </select>
+            </div>
+
+            <!-- Adults Count -->
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1.5">Adult Travelers (12+ Years)</label>
+              <div class="flex items-center">
+                <button type="button" onclick="adjustCounter('adults', -1)" class="w-10 h-10 rounded-l-xl bg-ocean-100 border border-ocean-200 flex items-center justify-center font-bold text-ocean-900 hover:bg-ocean-200">-</button>
+                <input type="number" id="calcAdults" value="2" min="1" max="50" readonly class="w-full h-10 border-y border-cyan-200 text-center text-sm font-semibold bg-white">
+                <button type="button" onclick="adjustCounter('adults', 1)" class="w-10 h-10 rounded-r-xl bg-ocean-100 border border-ocean-200 flex items-center justify-center font-bold text-ocean-900 hover:bg-ocean-200">+</button>
+              </div>
+            </div>
+
+            <!-- Children Count -->
+            <div>
+              <label class="block text-xs font-bold text-slate-600 mb-1.5">Children (Below 12)</label>
+              <div class="flex items-center">
+                <button type="button" onclick="adjustCounter('kids', -1)" class="w-10 h-10 rounded-l-xl bg-ocean-100 border border-ocean-200 flex items-center justify-center font-bold text-ocean-900 hover:bg-ocean-200">-</button>
+                <input type="number" id="calcKids" value="0" min="0" max="20" readonly class="w-full h-10 border-y border-cyan-200 text-center text-sm font-semibold bg-white">
+                <button type="button" onclick="adjustCounter('kids', 1)" class="w-10 h-10 rounded-r-xl bg-ocean-100 border border-ocean-200 flex items-center justify-center font-bold text-ocean-900 hover:bg-ocean-200">+</button>
+              </div>
+            </div>
+
+            <!-- Meal & Service Inclusions -->
+            <div class="sm:col-span-2 pt-3 border-t border-slate-100">
+              <label class="block text-xs font-bold text-slate-600 mb-2">Optional Inclusions</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <label class="inline-flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" id="addonMeals" checked onchange="calculateCustomCost()" class="rounded text-ocean-600 focus:ring-ocean-500">
+                  <span>Pure Veg / Jain Meal Inclusions</span>
+                </label>
+                <label class="inline-flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" id="addonTransfers" checked onchange="calculateCustomCost()" class="rounded text-ocean-600 focus:ring-ocean-500">
+                  <span>VIP Airport & Island Transfers</span>
+                </label>
+                <label class="inline-flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" id="addonSightseeing" checked onchange="calculateCustomCost()" class="rounded text-ocean-600 focus:ring-ocean-500">
+                  <span>Guided Excursions & Entry Passes</span>
+                </label>
+                <label class="inline-flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" id="addonInsurance" onchange="calculateCustomCost()" class="rounded text-ocean-600 focus:ring-ocean-500">
+                  <span>Overseas & Domestic Travel Insurance</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Total Calculation Display -->
+          <div class="bg-ocean-50/70 rounded-2xl p-5 border border-ocean-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p class="text-xs font-semibold text-slate-500">Estimated Total Investment</p>
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-extrabold text-ocean-700" id="calcEstimatedTotal">₹1,88,000</span>
+                <span class="text-xs text-slate-600 font-medium" id="calcPerPerson">approx. ₹94,000 / adult</span>
+              </div>
+              <p class="text-[11px] text-teal-700 font-semibold mt-0.5" id="calcDiscountTag">
+                <i data-lucide="check" class="w-3 h-3 inline"></i> Real-time calculation including transfers & selected dining
+              </p>
+            </div>
+            <button onclick="bookCalculatedQuote()" class="w-full sm:w-auto bg-gradient-to-r from-ocean-600 to-cyan-600 hover:from-ocean-700 hover:to-cyan-700 text-white font-bold text-sm px-6 py-3 rounded-xl shadow-lg shadow-ocean-600/30 transition">
+              Request Detailed Itinerary & Quote
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-ocean-700 bg-ocean-100/80 px-4 py-1.5 rounded-full border border-ocean-200">
+          The Yatra Holidays Standard
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3 mb-4">
+          Travel with Peace of Mind & Unmatched Comfort
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          Whether you are unwinding on a tropical island or circumambulating high Himalayan shrines, our team ensures every minute is comfortable, well-fed, and deeply memorable.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="p-6 rounded-3xl bg-ocean-50/50 border border-ocean-100 hover-lift group">
+          <div class="w-12 h-12 rounded-2xl bg-ocean-100 text-ocean-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="utensils" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Dedicated Indian & Satvik Food</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Freshly prepared vegetarian, Jain, and satvik menus across foreign resorts, high altitudes, and domestic pilgrimage hubs.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-cyan-50/50 border border-cyan-100 hover-lift group">
+          <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">IATA Accredited & Govt. Approved</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Verified tour operator with licensed airline ticketing, official foreign visa handling, and certified ground transport.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-amber-50/50 border border-amber-100 hover-lift group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="users" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Family & Senior-Friendly Pacing</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Thoughtfully planned travel schedules with minimal exhaustion, doli/wheelchair arrangements, and child-friendly activities.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-rose-50/50 border border-rose-100 hover-lift group">
+          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="gem" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 text-lg mb-2">Direct Resort & Hotel Partnerships</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Direct contracts with leading resorts in the Maldives, Bali, and Europe provide room upgrades, seaplane slots, and best rates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-gradient-to-b from-white to-cyan-50/40 border-y border-cyan-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs uppercase font-extrabold tracking-wider text-ocean-700 bg-ocean-100/80 px-4 py-1.5 rounded-full border border-ocean-200">
+          Verified Testimonials
+        </span>
+        <h2 class="font-serif text-3xl font-bold text-slate-900 mt-3 mb-2">
+          Loved by Thousands of Happy Travelers
+        </h2>
+        <p class="text-sm text-slate-600">Real feedback from honeymooners, families, and pilgrims across India.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-cyan-100 flex flex-col justify-between hover-lift">
+          <div>
+            <div class="flex text-sand-500 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "We booked our vacation with Yatra Holidays to the Maldives. The overwater villa with private sunset pool was beyond words. Having delicious Indian vegetarian meals on the island made it pure bliss!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-ocean-100 text-ocean-800 font-bold flex items-center justify-center text-xs">
+              AK
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Ankit & Sneha Kulkarni</p>
+              <p class="text-[11px] text-ocean-700 font-medium">Maldives Overwater Retreat, Pune</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-cyan-100 flex flex-col justify-between hover-lift">
+          <div>
+            <div class="flex text-sand-500 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "Char Dham Yatra with my elderly parents seemed daunting, but Yatra Holidays arranged seamless helicopter transfers for Kedarnath and warm satvik meals every single day. Highly recommend!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-800 font-bold flex items-center justify-center text-xs">
+              RJ
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Rajesh & Urmila Joshi</p>
+              <p class="text-[11px] text-cyan-700 font-medium">Char Dham Pilgrimage, Ahmedabad</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-cyan-100 flex flex-col justify-between hover-lift">
+          <div>
+            <div class="flex text-sand-500 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 italic leading-relaxed mb-6">
+              "Our Dubai tour including the BAPS Hindu Mandir in Abu Dhabi and Burj Khalifa was effortlessly managed. The private coach was punctual and the guide was extremely courteous."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+            <div class="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center text-xs">
+              NM
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-900">Naveen & Meera Nair</p>
+              <p class="text-[11px] text-teal-700 font-medium">Dubai & Abu Dhabi Tour, Bengaluru</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-sea-950 text-cyan-100/70 text-xs pt-16 pb-12 border-t border-cyan-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Company Overview -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-ocean-500 to-cyan-500 flex items-center justify-center text-sea-950 font-bold">
+              <i data-lucide="compass" class="w-5 h-5"></i>
+            </div>
+            <span class="font-serif text-xl font-bold text-white">Yatra<span class="text-ocean-400">Holidays</span></span>
+          </div>
+          <p class="text-cyan-200/70 text-xs leading-relaxed max-w-sm">
+            Crafting premium travel experiences across the globe. From serene tropical beaches in the Maldives and Bali to grand foreign city tours and revered domestic yatras across India.
+          </p>
+          <div class="pt-2 flex items-center gap-3 text-cyan-300">
+            <span class="w-8 h-8 rounded-full bg-cyan-900/60 flex items-center justify-center hover:bg-ocean-500 hover:text-sea-950 cursor-pointer transition"><i data-lucide="facebook" class="w-4 h-4"></i></span>
+            <span class="w-8 h-8 rounded-full bg-cyan-900/60 flex items-center justify-center hover:bg-ocean-500 hover:text-sea-950 cursor-pointer transition"><i data-lucide="instagram" class="w-4 h-4"></i></span>
+            <span class="w-8 h-8 rounded-full bg-cyan-900/60 flex items-center justify-center hover:bg-ocean-500 hover:text-sea-950 cursor-pointer transition"><i data-lucide="youtube" class="w-4 h-4"></i></span>
+          </div>
+        </div>
+
+        <!-- Beach & Islands Quick Links -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="palmtree" class="w-3.5 h-3.5 text-ocean-400"></i> Beach & Islands
+          </h4>
+          <ul class="space-y-2">
+            <li><a href="#packages" onclick="filterCategory('beach')" class="hover:text-white transition">Maldives Overwater Villa</a></li>
+            <li><a href="#packages" onclick="filterCategory('beach')" class="hover:text-white transition">Bali Beach & Temples</a></li>
+            <li><a href="#packages" onclick="filterCategory('beach')" class="hover:text-white transition">Kerala Backwaters & Coast</a></li>
+            <li><a href="#packages" onclick="filterCategory('beach')" class="hover:text-white transition">Sri Lanka South Beach Trail</a></li>
+            <li><a href="#custom-planner" class="hover:text-white transition">Custom Island Calculator</a></li>
+          </ul>
+        </div>
+
+        <!-- Foreign Tours Quick Links -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="globe" class="w-3.5 h-3.5 text-cyan-400"></i> Foreign Tours
+          </h4>
+          <ul class="space-y-2">
+            <li><a href="#packages" onclick="filterCategory('international')" class="hover:text-white transition">Dubai & BAPS Hindu Mandir</a></li>
+            <li><a href="#packages" onclick="filterCategory('international')" class="hover:text-white transition">Grand Europe & Swiss Alps</a></li>
+            <li><a href="#packages" onclick="filterCategory('international')" class="hover:text-white transition">Vietnam & Cambodia Angkor Wat</a></li>
+            <li><a href="#packages" onclick="filterCategory('international')" class="hover:text-white transition">Mount Kailash Parikrama</a></li>
+            <li><a href="#packages" onclick="filterCategory('international')" class="hover:text-white transition">Sri Lanka Ramayana Trail</a></li>
+          </ul>
+        </div>
+
+        <!-- Domestic Yatras & Desk -->
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3 flex items-center gap-1.5">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sand-400"></i> Contact & Support
+          </h4>
+          <p class="text-white font-semibold mb-1">Corporate Travel Desk:</p>
+          <p class="mb-3 text-cyan-200/70">Connaught Place, New Delhi & Dehradun, India.</p>
+          <p class="text-white font-semibold mb-1">24x7 Traveler Helpline:</p>
+          <p class="text-ocean-400 font-bold text-sm">+91 98765 43210</p>
+          <p class="text-cyan-200/70">holidays@yatraholidays.in</p>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-8 border-t border-cyan-900/60 text-center sm:flex sm:justify-between text-cyan-300/50">
+        <p>© 2026 Yatra Holidays Pvt. Ltd. All Rights Reserved. Reg: TRV-IND-2018-9921.</p>
+        <p class="mt-2 sm:mt-0">Island Getaways, Foreign Tours & Sacred Pilgrimages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="itineraryModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-sea-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden relative my-6 max-h-[90vh] flex flex-col border border-cyan-200">
+      
+      <!-- Modal Header -->
+      <div class="p-6 bg-gradient-to-r from-sea-950 via-teal-950 to-sea-900 text-white flex justify-between items-center shrink-0 border-b border-cyan-800">
+        <div>
+          <div class="flex items-center gap-2 mb-1">
+            <span id="modalCategoryBadge" class="text-[10px] font-bold uppercase tracking-wider text-sea-950 bg-ocean-300 px-2.5 py-0.5 rounded-full font-black">
+              Category
+            </span>
+            <span id="modalDestinationBadge" class="text-[10px] font-semibold uppercase tracking-wider text-cyan-200 bg-cyan-950 px-2 py-0.5 rounded border border-cyan-800">
+              Location
+            </span>
+          </div>
+          <h3 id="modalTitle" class="text-xl sm:text-2xl font-serif font-bold text-white">Tour Title</h3>
+          <p id="modalSubtitle" class="text-xs text-cyan-200">Overview of this curated journey</p>
+        </div>
+        <button onclick="closeItineraryModal()" class="w-9 h-9 rounded-full bg-cyan-900/60 hover:bg-cyan-800 text-cyan-200 hover:text-white flex items-center justify-center transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-6 text-sm">
+        <!-- Quick Highlights Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-ocean-50/70 p-4 rounded-2xl border border-ocean-200 text-xs">
+          <div><span class="text-slate-500 block">Duration</span><strong id="modalDuration" class="text-slate-800 text-sm">--</strong></div>
+          <div><span class="text-slate-500 block">Starting Rate</span><strong id="modalPrice" class="text-ocean-700 text-sm">--</strong></div>
+          <div><span class="text-slate-500 block">Food & Dining</span><strong id="modalMeal" class="text-slate-800 text-sm">Indian Veg & Regional</strong></div>
+          <div><span class="text-slate-500 block">Ground Transfers</span><strong id="modalTransport" class="text-slate-800 text-sm">Included in Tour</strong></div>
+        </div>
+
+        <!-- Day by Day Plan -->
+        <div>
+          <h4 class="font-serif text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <i data-lucide="compass" class="w-5 h-5 text-ocean-600"></i> Day-by-Day Detailed Itinerary
+          </h4>
+          <div id="modalDaysContainer" class="space-y-3 border-l-2 border-ocean-200 ml-3 pl-4">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Inclusions & Exclusions -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="p-4 bg-teal-50/70 rounded-2xl border border-teal-200">
+            <h5 class="font-bold text-teal-900 text-xs uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <i data-lucide="check" class="w-4 h-4 text-teal-600"></i> Inclusions
+            </h5>
+            <ul id="modalInclusions" class="space-y-1.5 text-xs text-teal-950">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+          <div class="p-4 bg-rose-50/70 rounded-2xl border border-rose-200">
+            <h5 class="font-bold text-rose-900 text-xs uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <i data-lucide="x" class="w-4 h-4 text-rose-600"></i> Exclusions
+            </h5>
+            <ul id="modalExclusions" class="space-y-1.5 text-xs text-rose-950">
+              <!-- Dynamically populated -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 sm:p-5 bg-ocean-50/50 border-t border-cyan-100 flex flex-col sm:flex-row items-center justify-between gap-3 shrink-0">
+        <div class="text-xs text-ocean-800 font-medium">
+          Personalize dates, add flights, or customize accommodation standard on request.
+        </div>
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+          <button onclick="closeItineraryModal()" class="w-1/2 sm:w-auto px-4 py-2.5 rounded-xl border border-cyan-300 text-xs font-semibold text-ocean-800 hover:bg-ocean-100">
+            Close
+          </button>
+          <button onclick="proceedToBookFromModal()" class="w-1/2 sm:w-auto px-6 py-2.5 rounded-xl bg-gradient-to-r from-ocean-600 to-cyan-600 hover:from-ocean-700 hover:to-cyan-700 text-white text-xs font-bold shadow-md flex items-center justify-center gap-1.5">
+            <i data-lucide="calendar" class="w-4 h-4"></i> Book This Tour
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="enquiryModal" class="fixed inset-0 z-50 hidden overflow-y-auto bg-sea-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-white w-full max-w-lg rounded-3xl shadow-2xl overflow-hidden relative border border-cyan-200">
+      <div class="p-5 bg-gradient-to-r from-ocean-600 to-cyan-600 text-white flex justify-between items-center">
+        <div>
+          <h3 class="font-serif font-bold text-xl" id="enquiryModalTitle">Plan Your Journey</h3>
+          <p class="text-xs text-cyan-100" id="enquiryModalSubtitle">Get customized quotation, dates & travel support</p>
+        </div>
+        <button onclick="closeEnquiryModal()" class="w-8 h-8 rounded-full bg-black/20 hover:bg-black/30 text-white flex items-center justify-center">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="tourInquiryForm" onsubmit="handleInquirySubmit(event)" class="p-6 space-y-4 text-xs">
+        <input type="hidden" id="inquiryPackageName" value="General">
+        
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Your Full Name *</label>
+          <input type="text" id="inqName" required placeholder="e.g. Rahul Sharma" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Mobile / WhatsApp Number *</label>
+            <input type="tel" id="inqPhone" required placeholder="+91 98765 43210" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Email Address</label>
+            <input type="email" id="inqEmail" placeholder="rahul@example.com" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Departure City in India</label>
+            <input type="text" id="inqCity" placeholder="e.g. Mumbai, Delhi, Bengaluru, Kochi" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Number of Travelers</label>
+            <input type="number" id="inqGuests" min="1" value="2" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Estimated Travel Month</label>
+            <input type="date" id="inqDate" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Trip Type</label>
+            <select id="inqOccasion" class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none bg-ocean-50/40">
+              <option value="leisure">Family Vacation</option>
+              <option value="honeymoon">Honeymoon / Couple</option>
+              <option value="pilgrimage">Spiritual Pilgrimage / Yatra</option>
+              <option value="friends">Friends Adventure</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Special Preferences / Meal Requirements</label>
+          <textarea id="inqNotes" rows="2" placeholder="e.g. Pure Jain / Indian Veg food, senior citizen assistance, overwater villa preference..." class="w-full p-2.5 rounded-xl border border-cyan-200 text-sm focus:ring-2 focus:ring-ocean-500 focus:outline-none"></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="w-full bg-gradient-to-r from-ocean-600 to-cyan-600 hover:from-ocean-700 hover:to-cyan-700 text-white font-bold py-3 rounded-xl shadow-md shadow-ocean-600/30 flex items-center justify-center gap-2 transition text-sm">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Submit Travel Request</span>
+          </button>
+          <p class="text-[11px] text-slate-400 text-center mt-2">A dedicated Yatra Holidays tour consultant will connect with you promptly on WhatsApp/Phone.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden bg-sea-950 text-white px-5 py-3.5 rounded-2xl shadow-2xl border border-cyan-700 flex items-center gap-3 transition-all transform translate-y-3">
+    <div class="w-7 h-7 rounded-full bg-ocean-500 text-sea-950 flex items-center justify-center text-xs font-bold">
+      <i data-lucide="check" class="w-4 h-4"></i>
+    </div>
+    <div>
+      <h5 id="toastTitle" class="text-xs font-bold text-white">Success!</h5>
+      <p id="toastMsg" class="text-[11px] text-cyan-200">Your request has been received.</p>
+    </div>
+  </div>
+
+  <script>
+    // Comprehensive Tour Packages Array with Maldives naturally placed alongside others
+    const ALL_PACKAGES = [
+      {
+        id: "pkg-maldives",
+        title: "Maldives Overwater Villa & Coral Lagoon Retreat",
+        destination: "maldives",
+        categories: ["beach", "international"],
+        durationCode: "short",
+        duration: "5 Days / 4 Nights",
+        priceVal: 68500,
+        priceFormatted: "₹68,500",
+        originalPrice: "₹82,000",
+        badge: "Island Getaway",
+        badgeColor: "bg-ocean-600",
+        image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80",
+        rating: 4.96,
+        reviewsCount: 380,
+        locationLabel: "Maldives, Indian Ocean",
+        description: "Private overwater villa with ocean plunge pool, seaplane transfer over turquoise atolls, sunset dolphin cruise, and verified Indian dining.",
+        highlights: ["Seaplane flight transfer from Male", "Direct lagoon access from sun deck", "All-inclusive Indian & international meals", "Complimentary snorkel equipment & dolphin cruise"],
+        itinerary: [
+          { day: "Day 1", title: "Male Arrival & Scenic Seaplane Flight", desc: "Arrival at Velana International Airport, Male. Board scenic seaplane across turquoise atolls to the private island resort. Check into your Overwater Villa." },
+          { day: "Day 2", title: "Coral Snorkeling & Lagoon Relaxation", desc: "Breakfast by the sea. Guided snorkeling session along the house reef to observe manta rays and colorful reef fish." },
+          { day: "Day 3", title: "Sunset Dolphin Watching Cruise", desc: "Day at leisure on soft sandy beaches. Late afternoon traditional boat cruise to witness wild spinner dolphins." },
+          { day: "Day 4", title: "Water Sports & Romantic Beach Dinner", desc: "Paddleboarding and kayaking. Evening special dinner under the starry tropical night sky." },
+          { day: "Day 5", title: "Seaplane Transfer to Male & Return", desc: "Farewell island breakfast. Return seaplane to Male Airport for flight connection back to India." }
+        ],
+        inclusions: ["4 Nights in Luxury Overwater Villa", "Return Seaplane / Speedboat Transfers", "All-Inclusive Dining (Breakfast, Lunch, Dinner)", "Sunset Dolphin Cruise & Snorkel gear", "Maldives 30-Day Tourist Visa on Arrival"],
+        exclusions: ["International return airfare (available on request)", "Motorized water sports (jet ski, parasailing)"]
+      },
+      {
+        id: "pkg-bali",
+        title: "Bali: Island of Gods, Water Temples & Beaches",
+        destination: "bali",
+        categories: ["beach", "international"],
+        durationCode: "medium",
+        duration: "6 Days / 5 Nights",
+        priceVal: 46000,
+        priceFormatted: "₹46,000",
+        originalPrice: "₹55,000",
+        badge: "Tropical Culture",
+        badgeColor: "bg-teal-600",
+        image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80",
+        rating: 4.92,
+        reviewsCount: 240,
+        locationLabel: "Bali, Indonesia",
+        description: "Besakih Mother Temple, Ulun Danu Beratan lake temple, Tanah Lot sea sunset, emerald Ubud rice terraces, and 1-night private pool villa.",
+        highlights: ["1 Night in Private Pool Villa", "Ubud rice terraces and jungle swing", "Iconic Tanah Lot sunset temple", "Indian vegetarian restaurant options"],
+        itinerary: [
+          { day: "Day 1", title: "Denpasar Arrival & Kuta/Seminyak", desc: "Warm welcome at Ngurah Rai Airport. Transfer to beach hotel and evening sunset walk." },
+          { day: "Day 2", title: "Ubud Rice Terraces & Art Markets", desc: "Explore Tegallalang rice terraces, Ubud monkey forest, and local artisan village." },
+          { day: "Day 3", title: "Besakih Mother Temple & Kintamani Volcano", desc: "Visit sacred Besakih temple on the slopes of Mount Agung with panoramic volcano views." },
+          { day: "Day 4", title: "Ulun Danu Floating Temple & Tanah Lot", desc: "Iconic Beratan lake temple followed by mystical Tanah Lot ocean cliff temple at sunset." },
+          { day: "Day 5", title: "Private Pool Villa Check-in & Jimbaran Beach", desc: "Relax in your private pool villa. Evening candlelight dinner on Jimbaran beach." },
+          { day: "Day 6", title: "Souvenir Shopping & Airport Departure", desc: "Morning shopping in local handicraft markets and airport transfer." }
+        ],
+        inclusions: ["5 Nights accommodation (including 1-night villa)", "Daily Breakfast & Dinners", "Private air-conditioned vehicle throughout", "All monument entry passes"],
+        exclusions: ["Bali Visa on Arrival", "International flights"]
+      },
+      {
+        id: "pkg-chardham",
+        title: "Char Dham Yatra Supreme (Kedarnath, Badrinath, Yamunotri, Gangotri)",
+        destination: "chardham",
+        categories: ["pilgrimage", "domestic"],
+        durationCode: "long",
+        duration: "10 Days / 9 Nights",
+        priceVal: 38500,
+        priceFormatted: "₹38,500",
+        originalPrice: "₹45,000",
+        badge: "Sacred Pilgrimage",
+        badgeColor: "bg-sand-500",
+        image: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80",
+        rating: 4.97,
+        reviewsCount: 490,
+        locationLabel: "Uttarakhand, Himalayas",
+        description: "Revered Himalayan pilgrimage circuit with Kedarnath helicopter assistance, Haridwar Ganga Aarti, Badrivishal darshan, and pure satvik kitchen meals.",
+        highlights: ["Helicopter assistance for Kedarnath", "Pure satvik kitchen cooks accompanying group", "VIP Darshan coordination at Badrinath & Kedarnath", "Oxygen support kit on high-altitude passes"],
+        itinerary: [
+          { day: "Day 1-2", title: "Haridwar to Barkot & Yamunotri Dham", desc: "Drive along Yamuna river. Holy snan at Surya Kund and divine darshan of Yamuna Ji." },
+          { day: "Day 3-4", title: "Uttarkashi & Gangotri Dham", desc: "Visit Kashi Vishwanath temple, followed by drive through Harsil Valley to sacred Gangotri." },
+          { day: "Day 5-7", title: "Guptkashi & Shri Kedarnath Ji Jyotirlinga", desc: "Helicopter / pony ascent to Kedarnath. Evening & morning Rudrabhishek darshan." },
+          { day: "Day 8-10", title: "Badrinath Dham to Rishikesh & Haridwar", desc: "Holy dip in Tapt Kund, darshan of Badri Vishal, Mana village, and evening Haridwar Aarti." }
+        ],
+        inclusions: ["9 Nights accommodation in deluxe guest houses", "Pure Satvik Breakfast, Lunch & Dinner", "AC Coach transport from Haridwar", "Registration and Yatra permits"],
+        exclusions: ["Kedarnath Helicopter fare (at govt rate)", "Pony / Porter personal charges"]
+      },
+      {
+        id: "pkg-dubai",
+        title: "Dubai & Abu Dhabi: City Marvels & BAPS Hindu Mandir",
+        destination: "dubai",
+        categories: ["international"],
+        durationCode: "short",
+        duration: "5 Days / 4 Nights",
+        priceVal: 54900,
+        priceFormatted: "₹54,900",
+        originalPrice: "₹65,000",
+        badge: "City & Heritage",
+        badgeColor: "bg-cyan-600",
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+        rating: 4.94,
+        reviewsCount: 320,
+        locationLabel: "Dubai & Abu Dhabi, UAE",
+        description: "Visit the grand hand-carved BAPS Hindu Mandir in Abu Dhabi, Burj Khalifa 124th floor, thrilling Desert Safari with BBQ, and Dubai Marina Cruise.",
+        highlights: ["BAPS Hindu Mandir Abu Dhabi guided visit", "Burj Khalifa 124th Floor observatory pass", "4x4 Desert Safari with dune bashing & dinner", "UAE Tourist Visa and travel insurance included"],
+        itinerary: [
+          { day: "Day 1", title: "Dubai Arrival & Marina Dhow Cruise", desc: "Arrival in Dubai, check-in to 4-star hotel. Evening luxury Marina cruise with international buffet." },
+          { day: "Day 2", title: "Dubai City Tour & Burj Khalifa", desc: "Explore Dubai Frame, Palm Jumeirah, and ascend to Burj Khalifa 124th floor observatory." },
+          { day: "Day 3", title: "Abu Dhabi & BAPS Hindu Mandir", desc: "Day trip to Abu Dhabi: marvel at the BAPS Hindu Mandir and Sheikh Zayed Grand Mosque." },
+          { day: "Day 4", title: "Gold Souk & Desert Safari", desc: "Morning visit to traditional Gold Souk. Afternoon 4x4 desert safari with live cultural show and BBQ." },
+          { day: "Day 5", title: "Duty Free Shopping & Return Flight", desc: "Morning leisure for shopping. Airport transfer for flight back home." }
+        ],
+        inclusions: ["4 Nights in 4-Star Dubai Hotel", "Daily Breakfast & Dinners in Indian restaurants", "UAE Tourist Visa & Medical Insurance", "All entry passes and desert safari"],
+        exclusions: ["International return airfare", "Tourism Dirham tax"]
+      },
+      {
+        id: "pkg-europe",
+        title: "Grand Europe: Swiss Alps, Paris & Eiffel Tower",
+        destination: "europe",
+        categories: ["international"],
+        durationCode: "long",
+        duration: "8 Days / 7 Nights",
+        priceVal: 198000,
+        priceFormatted: "₹1,98,000",
+        originalPrice: "₹2,25,000",
+        badge: "Scenic Splendour",
+        badgeColor: "bg-indigo-600",
+        image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80",
+        rating: 4.96,
+        reviewsCount: 190,
+        locationLabel: "Switzerland & France",
+        description: "Mount Titlis snow glacier with revolving cable car, Lucerne lake cruise, Eiffel Tower top floor, Seine river cruise, and authentic Indian dinners daily.",
+        highlights: ["Eiffel Tower top level access", "Mount Titlis Rotair revolving cable car", "Authentic Indian vegetarian dinner daily", "Schengen Visa appointment guidance"],
+        itinerary: [
+          { day: "Day 1-3", title: "Paris: Eiffel Tower, Louvre & River Seine", desc: "City tour of Paris, Eiffel Tower top floor access, and romantic Seine river cruise." },
+          { day: "Day 4", title: "Scenic Drive Through Black Forest to Switzerland", desc: "Travel through Germany's Black Forest, admire the Rhine Falls, and enter Swiss lakes." },
+          { day: "Day 5-6", title: "Mount Titlis Snow Mountain & Lucerne", desc: "Ascend Mt. Titlis on the revolving Rotair, walk the Cliff Bridge, and tour historic Lucerne." },
+          { day: "Day 7", title: "Interlaken Alpine Serenity", desc: "Free day to explore picturesque Interlaken surrounded by the Bernese Alps." },
+          { day: "Day 8", title: "Zurich Departure to India", desc: "Zurich city sights and airport transfer for return flight." }
+        ],
+        inclusions: ["7 Nights in 4-Star hotels", "Daily Breakfast and Indian Dinners", "Long distance European coach travel", "Mt. Titlis and Eiffel Tower tickets"],
+        exclusions: ["Schengen Visa embassy fee", "Return international airfare"]
+      },
+      {
+        id: "pkg-srilanka",
+        title: "Sri Lanka: Sacred Ramayana Trail & Southern Coast",
+        destination: "srilanka",
+        categories: ["pilgrimage", "beach", "international"],
+        durationCode: "medium",
+        duration: "6 Days / 5 Nights",
+        priceVal: 48500,
+        priceFormatted: "₹48,500",
+        originalPrice: "₹56,000",
+        badge: "Heritage & Coast",
+        badgeColor: "bg-amber-600",
+        image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?auto=format&fit=crop&w=800&q=80",
+        rating: 4.93,
+        reviewsCount: 260,
+        locationLabel: "Sri Lanka",
+        description: "Ashok Vatika, Sita Amman Temple, Ravana Caves, Divurumpola, Temple of the Tooth in Kandy, and relaxing golden beaches of Bentota.",
+        highlights: ["Special puja at Sita Amman Temple", "Ashok Vatika & Ravana Falls visit", "Relaxing beach stay in Bentota", "Pure Indian vegetarian dining"],
+        itinerary: [
+          { day: "Day 1", title: "Colombo Arrival & Drive to Kandy", desc: "Arrival in Colombo, scenic drive to Kandy, visit sacred Temple of the Tooth Relic." },
+          { day: "Day 2", title: "Kandy to Nuwara Eliya Tea Hills", desc: "Visit Ramboda Hanuman Temple and lush Ceylon tea estates in the misty mountains." },
+          { day: "Day 3", title: "Ashok Vatika & Sita Amman Temple", desc: "Prayers at Sita Amman Temple, explore Hakgala botanical gardens (Ashok Vatika)." },
+          { day: "Day 4", title: "Divurumpola Agni Pariksha Site to Bentota Coast", desc: "Visit the revered Agni Pariksha site and transfer to the tropical coast of Bentota." },
+          { day: "Day 5-6", title: "Bentota Beach, Colombo City & Departure", desc: "Morning beach leisure, Colombo Vibhishana temple visit, and flight back to India." }
+        ],
+        inclusions: ["5 Nights in 4-Star beachfront & hillside hotels", "Indian Vegetarian Breakfast & Dinners", "Dedicated AC vehicle with guide", "Sri Lanka ETA Visa assistance"],
+        exclusions: ["International airfare", "Personal watersports in Bentota"]
+      },
+      {
+        id: "pkg-kailash",
+        title: "Mount Kailash & Lake Mansarovar Holy Kora",
+        destination: "kailash",
+        categories: ["pilgrimage", "international"],
+        durationCode: "long",
+        duration: "13 Days / 12 Nights",
+        priceVal: 185000,
+        priceFormatted: "₹1,85,000",
+        originalPrice: "₹2,10,000",
+        badge: "Sacred Parikrama",
+        badgeColor: "bg-indigo-700",
+        image: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80",
+        rating: 4.98,
+        reviewsCount: 310,
+        locationLabel: "Tibet Autonomous Region",
+        description: "Sacred 3-day parikrama of Mount Kailash across Dolma La Pass (18,600 ft) and holy dip at Lake Mansarovar with Maharaj cooks and Tibet permits.",
+        highlights: ["Tibet group permits & China visa included", "Pure vegetarian Maharaj kitchen cooks accompanying", "Experienced Sherpa guides and oxygen cylinders", "Kathmandu Pashupatinath VIP darshan"],
+        itinerary: [
+          { day: "Day 1-2", title: "Kathmandu Arrival & Pashupatinath", desc: "Arrival in Nepal, Rudrabhishek puja at Pashupatinath Temple." },
+          { day: "Day 3-4", title: "Tibet Border Crossing & Acclimatization", desc: "Drive across the border into Tibet, acclimatization rest in Kyirong." },
+          { day: "Day 5-7", title: "Lake Mansarovar Puja & Darchen Base", desc: "Sacred bath, havan puja at Lake Mansarovar, and base camp transfer." },
+          { day: "Day 8-10", title: "Mount Kailash Holy Parikrama", desc: "Trek to Dirapuk, cross Dolma La Pass (5,630m), glimpse Gauri Kund and return." },
+          { day: "Day 11-13", title: "Return to Kathmandu & Departure", desc: "Descent from Tibet plateau, scenic return to Kathmandu and departure to India." }
+        ],
+        inclusions: ["Tibet Travel Permits & Group Visa", "All pure vegetarian meals by Maharaj cooks", "Kathmandu 5-star hotel & Tibet guest houses", "Sherpa assistance & oxygen kits"],
+        exclusions: ["Personal pony / horse hire in Tibet", "Flights to/from Kathmandu"]
+      },
+      {
+        id: "pkg-kashmir",
+        title: "Kashmir Paradise: Dal Lake Houseboat & Snow Valleys",
+        destination: "kashmir",
+        categories: ["domestic"],
+        durationCode: "medium",
+        duration: "6 Days / 5 Nights",
+        priceVal: 29500,
+        priceFormatted: "₹29,500",
+        originalPrice: "₹36,000",
+        badge: "Valley of Beauty",
+        badgeColor: "bg-emerald-600",
+        image: "https://images.unsplash.com/photo-1566837945700-30057527ade0?auto=format&fit=crop&w=800&q=80",
+        rating: 4.95,
+        reviewsCount: 350,
+        locationLabel: "Kashmir, India",
+        description: "Stay in a traditional luxury Dal Lake houseboat, ride the Gulmarg gondola cable car in snow, stroll pine forests of Pahalgam, and enjoy sunset Shikara rides.",
+        highlights: ["Luxury Dal Lake carved houseboat stay", "Complimentary sunset Shikara ride", "Gulmarg snow cable car assistance", "Private sedan / Innova vehicle throughout"],
+        itinerary: [
+          { day: "Day 1", title: "Srinagar Arrival & Dal Lake Houseboat", desc: "Arrival at Srinagar Airport. Transfer to luxury houseboat, evening Shikara ride." },
+          { day: "Day 2", title: "Gulmarg Snow Glades & Gondola", desc: "Full day excursion to Gulmarg. Snow activities and scenic gondola ride." },
+          { day: "Day 3-4", title: "Pahalgam Pine Valley & Betaab Valley", desc: "Drive along saffron fields to Pahalgam. Cottage stay along Lidder River." },
+          { day: "Day 5-6", title: "Mughal Gardens & Airport Departure", desc: "Visit Nishat & Shalimar Bagh, Shankaracharya Temple, and airport transfer." }
+        ],
+        inclusions: ["5 Nights in deluxe hotels & houseboat", "Daily Breakfast & Dinners", "Dedicated private vehicle with driver", "Shikara ride on Dal Lake"],
+        exclusions: ["Gulmarg Gondola cable car ticket", "Airfare to/from Srinagar"]
+      },
+      {
+        id: "pkg-kerala",
+        title: "Kerala Backwaters & Kovalam Beach Serenity",
+        destination: "kerala",
+        categories: ["beach", "domestic"],
+        durationCode: "medium",
+        duration: "6 Days / 5 Nights",
+        priceVal: 26000,
+        priceFormatted: "₹26,000",
+        originalPrice: "₹32,000",
+        badge: "Backwaters & Coast",
+        badgeColor: "bg-teal-700",
+        image: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80",
+        rating: 4.91,
+        reviewsCount: 210,
+        locationLabel: "Kerala, God's Own Country",
+        description: "Private Alleppey backwater houseboat cruise, Munnar tea hills, Thekkady spice plantations, and golden sunset beaches of Kovalam.",
+        highlights: ["Overnight cruise on private houseboat with personal chef", "Munnar rolling tea plantations & waterfalls", "Kovalam lighthouse beach relaxation", "Authentic Kerala Ayurvedic wellness options"],
+        itinerary: [
+          { day: "Day 1-2", title: "Cochin to Munnar Tea Gardens", desc: "Scenic waterfalls, lush tea museum, and fresh hillside breeze." },
+          { day: "Day 3", title: "Thekkady Wildlife & Spice Gardens", desc: "Periyar lake boat safari and guided spice plantation tour." },
+          { day: "Day 4", title: "Alleppey Houseboat Backwater Cruise", desc: "Check-in to private traditional houseboat. Float through palm-fringed canals." },
+          { day: "Day 5-6", title: "Kovalam Beach & Trivandrum Departure", desc: "Relax by the Arabian Sea at Kovalam, visit Padmanabhaswamy temple, and return." }
+        ],
+        inclusions: ["4 Nights in resorts + 1 Night in private houseboat", "All meals on houseboat + daily breakfast", "Private air-conditioned car throughout"],
+        exclusions: ["Ayurvedic treatments", "Flights / train tickets"]
+      },
+      {
+        id: "pkg-vietnam",
+        title: "Vietnam & Cambodia: Angkor Wat & Halong Bay",
+        destination: "vietnam-cambodia",
+        categories: ["international"],
+        durationCode: "medium",
+        duration: "7 Days / 6 Nights",
+        priceVal: 68000,
+        priceFormatted: "₹68,000",
+        originalPrice: "₹79,000",
+        badge: "World Wonder",
+        badgeColor: "bg-coral-600",
+        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+        rating: 4.93,
+        reviewsCount: 175,
+        locationLabel: "Cambodia & Vietnam",
+        description: "Sunrise at Angkor Wat in Siem Reap, Hanoi's vibrant French Quarter, and an overnight luxury cruise on emerald waters of Halong Bay.",
+        highlights: ["Angkor Wat sunrise guided darshan", "Overnight luxury cruise on Halong Bay", "Cambodia & Vietnam E-Visa assistance", "Daily Indian vegetarian dining options"],
+        itinerary: [
+          { day: "Day 1-3", title: "Siem Reap & Angkor Wat Complex", desc: "Explore grand Angkor Wat, Bayon Temple, and Ta Prohm overgrown tree roots." },
+          { day: "Day 4", title: "Flight to Hanoi, Vietnam", desc: "Short flight to Hanoi, cyclo tour around Old Quarter, and traditional water puppet show." },
+          { day: "Day 5-6", title: "Halong Bay Overnight Emerald Cruise", desc: "Cruise through thousands of limestone peaks. Kayak through sea grottos." },
+          { day: "Day 7", title: "Hanoi City & Departure", desc: "Souvenir market visit and airport drop for return flight." }
+        ],
+        inclusions: ["6 Nights in 4-Star hotels & luxury cruise", "Daily Breakfast & Indian Dinners", "Inter-country flight Siem Reap to Hanoi", "All entrance tickets"],
+        exclusions: ["Return flights from India", "Visa stamping charges"]
+      }
+    ];
+
+    let currentActiveCategory = 'all';
+    let currentSelectedPackage = null;
+
+    // Render packages function
+    function renderPackageGrid(packages) {
+      const container = document.getElementById('packagesContainer');
+      const emptyState = document.getElementById('noResults');
+
+      if (!packages || packages.length === 0) {
+        container.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      container.innerHTML = packages.map(pkg => `
+        <div class="bg-white rounded-3xl overflow-hidden border border-cyan-100 shadow-sm hover-lift flex flex-col group">
+          <!-- Card Image & Overlay -->
+          <div class="relative h-56 overflow-hidden">
+            <img src="${pkg.image}" alt="${pkg.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-sea-950/80 via-transparent to-transparent"></div>
+            
+            <div class="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
+              <span class="${pkg.badgeColor} text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full shadow uppercase tracking-wider">
+                ${pkg.badge}
+              </span>
+              <span class="bg-black/60 backdrop-blur-md text-cyan-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-cyan-400/30">
+                ${pkg.locationLabel}
+              </span>
+            </div>
+
+            <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
+              <span class="flex items-center gap-1 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-lg">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-ocean-300"></i> ${pkg.duration}
+              </span>
+              <span class="flex items-center gap-1 bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-lg font-semibold">
+                <i data-lucide="star" class="w-3.5 h-3.5 text-sand-400 fill-current"></i> ${pkg.rating} (${pkg.reviewsCount})
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-serif font-bold text-lg text-slate-900 group-hover:text-ocean-700 transition-colors line-clamp-1 mb-2">
+                ${pkg.title}
+              </h3>
+              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-4">
+                ${pkg.description}
+              </p>
+
+              <!-- Highlights Tags -->
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                ${pkg.highlights.slice(0, 2).map(h => `
+                  <span class="text-[10px] bg-ocean-50 text-ocean-900 px-2 py-0.5 rounded-full flex items-center gap-1 border border-ocean-200/80 font-medium">
+                    <i data-lucide="check" class="w-3 h-3 text-teal-600"></i> ${h}
+                  </span>
+                `).join('')}
+              </div>
+            </div>
+
+            <!-- Price and Details Action -->
+            <div class="pt-4 border-t border-cyan-100 flex items-center justify-between mt-auto">
+              <div>
+                <span class="text-[10px] text-slate-400 block line-through">${pkg.originalPrice}</span>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-xl font-extrabold text-ocean-700">${pkg.priceFormatted}</span>
+                  <span class="text-[10px] text-slate-500">/ person</span>
+                </div>
+              </div>
+              <button onclick="openItineraryModal('${pkg.id}')" class="px-4 py-2.5 rounded-xl bg-ocean-50 text-ocean-800 hover:bg-ocean-600 hover:text-white font-bold text-xs transition flex items-center gap-1 border border-ocean-200 hover:border-ocean-600 shadow-sm">
+                <span>View Plan</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    }
+
+    // Filter by Category Pills
+    function filterCategory(cat) {
+      currentActiveCategory = cat;
+
+      const pills = ['all', 'beach', 'international', 'pilgrimage', 'domestic'];
+      pills.forEach(p => {
+        const el = document.getElementById(`pill-${p}`);
+        if (!el) return;
+        if (p === cat) {
+          el.className = "px-5 py-2 text-xs sm:text-sm font-bold rounded-xl bg-gradient-to-r from-ocean-600 to-cyan-600 text-white shadow-md transition flex items-center gap-1.5";
+        } else {
+          el.className = "px-5 py-2 text-xs sm:text-sm font-semibold rounded-xl text-slate-700 hover:text-ocean-700 transition flex items-center gap-1.5";
+        }
+      });
+
+      if (cat === 'all') {
+        renderPackageGrid(ALL_PACKAGES);
+      } else {
+        const filtered = ALL_PACKAGES.filter(p => p.categories.includes(cat));
+        renderPackageGrid(filtered);
+      }
+    }
+
+    // Search Form Handler
+    function handleSearch(e) {
+      e.preventDefault();
+      const dest = document.getElementById('filterDestination').value;
+      const cat = document.getElementById('filterCategory').value;
+      const dur = document.getElementById('filterDuration').value;
+      const budget = document.getElementById('filterBudget').value;
+
+      let results = [...ALL_PACKAGES];
+
+      if (dest !== 'all') {
+        results = results.filter(p => p.destination === dest);
+      }
+
+      if (cat !== 'all') {
+        results = results.filter(p => p.categories.includes(cat));
+      }
+
+      if (dur !== 'all') {
+        results = results.filter(p => p.durationCode === dur);
+      }
+
+      if (budget !== 'all') {
+        const maxBudget = parseInt(budget, 10);
+        results = results.filter(p => p.priceVal <= maxBudget);
+      }
+
+      renderPackageGrid(results);
+      document.getElementById('packages').scrollIntoView({ behavior: 'smooth' });
+      showToast('Search Updated', `Found ${results.length} package(s) matching your selections.`);
+    }
+
+    function resetFilters() {
+      document.getElementById('searchForm').reset();
+      filterCategory('all');
+    }
+
+    // Dynamic Counter helper
+    function adjustCounter(type, delta) {
+      const input = document.getElementById(type === 'adults' ? 'calcAdults' : 'calcKids');
+      let val = parseInt(input.value, 10) + delta;
+      if (type === 'adults' && val < 1) val = 1;
+      if (type === 'kids' && val < 0) val = 0;
+      input.value = val;
+      calculateCustomCost();
+    }
+
+    // Custom Tour Price Calculator
+    function calculateCustomCost() {
+      const region = document.getElementById('calcRegion').value;
+      const hotel = document.getElementById('calcHotel').value;
+      const flightOpt = document.getElementById('calcFlight').value;
+      const adults = parseInt(document.getElementById('calcAdults').value, 10) || 1;
+      const kids = parseInt(document.getElementById('calcKids').value, 10) || 0;
+      const addonMeals = document.getElementById('addonMeals').checked;
+      const addonTransfers = document.getElementById('addonTransfers').checked;
+      const addonSightseeing = document.getElementById('addonSightseeing').checked;
+      const addonInsurance = document.getElementById('addonInsurance').checked;
+
+      // Rate baseline metadata
+      const rates = {
+        maldives: { days: 5, landPerDay: 11000, flightEst: 24000, transferEst: 8500 },
+        bali: { days: 6, landPerDay: 5500, flightEst: 28000, transferEst: 4000 },
+        dubai: { days: 5, landPerDay: 6500, flightEst: 22000, transferEst: 4500 },
+        europe: { days: 8, landPerDay: 14000, flightEst: 58000, transferEst: 9500 },
+        srilanka: { days: 6, landPerDay: 5000, flightEst: 18000, transferEst: 4000 },
+        vietnam: { days: 7, landPerDay: 6200, flightEst: 26000, transferEst: 5000 },
+        chardham: { days: 10, landPerDay: 3400, flightEst: 8500, transferEst: 3500 },
+        kashmir: { days: 6, landPerDay: 3800, flightEst: 11000, transferEst: 3000 },
+        kerala: { days: 6, landPerDay: 3200, flightEst: 9000, transferEst: 3000 },
+        kailash: { days: 13, landPerDay: 8000, flightEst: 28000, transferEst: 7000 }
+      };
+
+      const selected = rates[region] || rates['maldives'];
+      
+      let hotelMultiplier = 1.0;
+      if (hotel === 'deluxe') hotelMultiplier = 1.25;
+      if (hotel === 'luxury') hotelMultiplier = 1.65;
+
+      const adultLandCost = (selected.landPerDay * hotelMultiplier) * selected.days;
+      const kidLandCost = adultLandCost * 0.55;
+
+      let subtotal = (adultLandCost * adults) + (kidLandCost * kids);
+
+      // Flights
+      if (flightOpt === 'flights_included') {
+        subtotal += (selected.flightEst * adults) + (selected.flightEst * 0.85 * kids);
+      }
+
+      // Addons
+      if (addonMeals) {
+        subtotal += (1500 * selected.days * adults) + (900 * selected.days * kids);
+      }
+      if (addonTransfers) {
+        subtotal += (selected.transferEst * adults) + (selected.transferEst * 0.6 * kids);
+      }
+      if (addonSightseeing) {
+        subtotal += (3000 * adults) + (1500 * kids);
+      }
+      if (addonInsurance) {
+        subtotal += (1200 * (adults + kids));
+      }
+
+      // Group discount for 4+ adults
+      if (adults >= 4) {
+        subtotal = subtotal * 0.92;
+        document.getElementById('calcDiscountTag').innerHTML = `<i data-lucide="sparkles" class="w-3 h-3 inline text-sand-500"></i> Special 8% Family / Group Savings Included!`;
+      } else {
+        document.getElementById('calcDiscountTag').innerHTML = `<i data-lucide="check" class="w-3 h-3 inline text-teal-600"></i> Real-time calculation including transfers & selected dining`;
+      }
+
+      const totalFormatted = "₹" + Math.round(subtotal).toLocaleString('en-IN');
+      const perAdultFormatted = "approx. ₹" + Math.round(subtotal / adults).toLocaleString('en-IN') + " / adult";
+
+      document.getElementById('calcEstimatedTotal').innerText = totalFormatted;
+      document.getElementById('calcPerPerson').innerText = perAdultFormatted;
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function bookCalculatedQuote() {
+      const regSelect = document.getElementById('calcRegion');
+      const regText = regSelect.options[regSelect.selectedIndex].text;
+      const estPrice = document.getElementById('calcEstimatedTotal').innerText;
+      openEnquiryModal(`Custom Quote: ${regText}`, `Estimated Cost: ${estPrice}`);
+    }
+
+    // Itinerary Modal Controller
+    function openItineraryModal(pkgId) {
+      const pkg = ALL_PACKAGES.find(p => p.id === pkgId);
+      if (!pkg) return;
+      currentSelectedPackage = pkg;
+
+      document.getElementById('modalCategoryBadge').innerText = pkg.badge;
+      document.getElementById('modalDestinationBadge').innerText = pkg.locationLabel;
+      document.getElementById('modalTitle').innerText = pkg.title;
+      document.getElementById('modalSubtitle').innerText = pkg.description;
+      document.getElementById('modalDuration').innerText = pkg.duration;
+      document.getElementById('modalPrice').innerText = pkg.priceFormatted;
+
+      const daysContainer = document.getElementById('modalDaysContainer');
+      daysContainer.innerHTML = pkg.itinerary.map(day => `
+        <div class="relative pb-3">
+          <div class="absolute -left-[21px] top-1 w-2.5 h-2.5 rounded-full bg-ocean-600 border-2 border-white"></div>
+          <p class="font-bold text-slate-800 text-xs text-ocean-800">${day.day}: ${day.title}</p>
+          <p class="text-slate-600 text-xs mt-0.5 leading-relaxed">${day.desc}</p>
+        </div>
+      `).join('');
+
+      document.getElementById('modalInclusions').innerHTML = pkg.inclusions.map(i => `
+        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-600"></i> ${i}</li>
+      `).join('');
+
+      document.getElementById('modalExclusions').innerHTML = pkg.exclusions.map(e => `
+        <li class="flex items-center gap-1.5"><i data-lucide="x" class="w-3 h-3 text-rose-500"></i> ${e}</li>
+      `).join('');
+
+      document.getElementById('itineraryModal').classList.remove('hidden');
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function closeItineraryModal() {
+      document.getElementById('itineraryModal').classList.add('hidden');
+    }
+
+    function proceedToBookFromModal() {
+      if (!currentSelectedPackage) return;
+      closeItineraryModal();
+      openEnquiryModal(currentSelectedPackage.title, `Duration: ${currentSelectedPackage.duration} | Price: ${currentSelectedPackage.priceFormatted}`);
+    }
+
+    // Enquiry Modal Controller
+    function openEnquiryModal(title = "Trip Inquiry", subtitle = "Submit your details for personalized dates and quotes") {
+      document.getElementById('inquiryPackageName').value = title;
+      document.getElementById('enquiryModalTitle').innerText = title;
+      document.getElementById('enquiryModalSubtitle').innerText = subtitle;
+      document.getElementById('enquiryModal').classList.remove('hidden');
+    }
+
+    function closeEnquiryModal() {
+      document.getElementById('enquiryModal').classList.add('hidden');
+      document.getElementById('tourInquiryForm').reset();
+    }
+
+    function handleInquirySubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('inqName').value;
+      const phone = document.getElementById('inqPhone').value;
+      closeEnquiryModal();
+      showToast('Inquiry Received!', `Thank you, ${name}! A travel advisor will connect on ${phone} shortly.`);
+    }
+
+    // Toast Notification helper
+    function showToast(title, msg) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').innerText = title;
+      document.getElementById('toastMsg').innerText = msg;
+      
+      toast.classList.remove('hidden');
+      toast.classList.remove('translate-y-3');
+      
+      if (window.lucide) lucide.createIcons();
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-3');
+        setTimeout(() => toast.classList.add('hidden'), 250);
+      }, 4000);
+    }
+
+    // Mobile Navigation Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    function toggleMobileMenu() {
+      mobileMenu.classList.toggle('hidden');
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+    // Initializer
+    window.addEventListener('DOMContentLoaded', () => {
+      renderPackageGrid(ALL_PACKAGES);
+      calculateCustomCost();
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
